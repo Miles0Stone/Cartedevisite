@@ -1,0 +1,117 @@
+
+.header{
+    height: 450px;
+    width: 100%;
+    background:black;
+    position: relative;
+}
+.header_texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0; left:0;
+    background: url("photo.jpeg")center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.header_mask{
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 42px;
+    width: 100%;
+    z-index: 10;
+}
+.container{
+    width: 90%;
+    margin:auto;
+    position: relative;
+    z-index: 999;
+}
+.header_navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_navbar_logo_title{
+    color:#FFF;
+    font-size: 28px;;
+}
+.header_navbar_menu_link{
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+.fas {
+    margin-right: 10px;
+}
+.header_img{
+    display: block;
+    margin: auto;
+}
+.img{
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+.header_navbar_toggle{
+    width:40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+.header_navbar_toggle_icons,.header_navbar_toggle_icons:before, .header_navbar_toggle_icons:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+}
+.header_navbar_toggle_icons:before {top: 10px}
+.header_navbar_toggle_icons:after {top: -14px}
+
+.is-open .header_navbar_menu{
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 890px){
+
+.container{
+    width: 100%;
+    padding: 0 20px;
+}
+.header_img, .img{
+    width: 100%;
+    height: 100%;
+}
+    
+.header_navbar_toggle{
+    display: flex;
+    z-index: 1000;
+}
+.header_navbar_menu{
+    transition: all 0.3S ease-in-out;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw ;
+    height: 73vh;
+    background: #efb407;
+    top: 0; left: 0;
+}
+.header_navbar_menu_link{
+    margin: 20px 0;
+    font-size: 20px;
+}
+      
+}

@@ -1,0 +1,156 @@
+.articles{
+    text-align: center;
+    padding-top: 128px;    
+}
+.text{
+    width: 70%;
+    margin: auto;
+}
+.article_title{
+    font-size: 26px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+.presentation{
+    display: block;
+    font-size: 17px;
+    text-align:justify;
+    padding-top: 1px;
+}
+.motivations{
+    display: block;
+    text-align: center;
+}
+.Motiv_ation{
+    border-bottom: 2px solid rgb(197, 197, 197);
+    padding-bottom: 8px;
+    text-align: center;
+    padding-top: 20px;
+    width: 70%;
+    margin: auto;
+}
+.list{
+    list-style-type: none;
+    font-size: 20px;
+    width: 500px;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    
+}
+.li{
+    margin: 20px 0;
+    padding: 10px 30px;
+    background-color: rgb(226, 238, 238);
+    cursor:pointer;
+    position: relative;
+    transition: all .4s;
+}
+.li::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:5px;
+    transition: all .4s;
+    z-index:-1;
+}
+
+.li:hover::before{
+    width: 100%;
+}
+.li:nth-child(1)::before{
+    background: #4285f4;
+}
+.li:nth-child(2)::before{
+    background: #db4437;
+}
+.li:nth-child(3)::before{
+    background: #f4b400;
+}
+.li:nth-child(4)::before{
+    background: #0f9d58;
+}
+.li:nth-child(5)::before{
+    background: #fd7c04;
+}
+.li:hover{
+    transform: translate(20px);
+}
+.gal_erie{
+    border-bottom: 2px solid rgb(197, 197, 197);
+    padding-bottom: 8px;
+    text-align: center;
+    padding-top: 5px;
+    width: 70%;
+    margin: auto;
+}
+.article_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.article1{
+    width: 25%;
+    height:200px;
+    border-radius: 8px;
+    background:url(A3.jpg) no-repeat center;
+    background-size: cover;
+}
+.article2{
+    width: 25%;
+    height:200px;
+    border-radius: 8px;
+    background:url(festiday.jpg) no-repeat center;
+    background-size: cover;
+    
+}
+.article3{
+    width: 25%;
+    height:200px;
+    border-radius: 8px;
+    background:url(Affiche\ a3.jpg) no-repeat center;
+    background-size: cover;
+}
+@media only screen and (max-width: 930px){
+
+.article_item{
+    justify-content: center;
+}
+.article1{
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.article2{
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.article3{
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.li{
+   width: 300px; 
+   margin-bottom: 20px;
+   align-items: center; 
+}
+
+}
+
+
+
+
+
